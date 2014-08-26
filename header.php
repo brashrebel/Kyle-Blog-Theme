@@ -22,15 +22,15 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kyle' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+	<header id="masthead" class="site-header row" role="banner">
+		<div class="site-branding large-3 columns">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation large-9 columns" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'kyle' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'inline-list right' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

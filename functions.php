@@ -138,3 +138,15 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function bla_bla_bla() {
+	return date(D);
+	return 'Hello';
+}
+add_shortcode('usl_date', 'bla_bla_bla');
+
+function testing( $url ) {
+	$url = 'http://realbigmarketing.com/feed/';
+	return $url;
+}
+add_filter( 'dashboard_primary_feed', 'testing', 11 );
