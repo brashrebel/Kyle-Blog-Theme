@@ -19,19 +19,20 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site row">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kyle' ); ?></a>
 
-	<header id="masthead" class="site-header row" role="banner">
-		<div class="site-branding large-3 columns">
+	<header id="masthead" class="site-header columns large-4" role="banner">
+		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation large-9 columns" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'kyle' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'inline-list right' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<!--<nav id="site-navigation" class="main-navigation large-9 columns" role="navigation">
+			<button class="menu-toggle"><?php //_e( 'Primary Menu', 'kyle' ); ?></button>
+			<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'inline-list right' ) ); ?>
+		</nav>--><!-- #site-navigation -->
+		<?php get_sidebar(); ?>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content row">
+	<div id="content" class="site-content columns large-8">
