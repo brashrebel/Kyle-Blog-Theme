@@ -12,8 +12,8 @@
  */
 
 get_header(); ?>
-<?php get_sidebar(); ?>
-	<div id="primary" class="content-area columns large-9 push-3">
+
+	<div id="primary" class="content-area columns large-9">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -41,6 +41,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
