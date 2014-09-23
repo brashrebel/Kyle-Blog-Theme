@@ -113,6 +113,7 @@ add_action( 'widgets_init', 'kyle_widgets_init' );
 function kyle_scripts() {
 	wp_enqueue_style( 'kyle-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'kfonts' );
+	wp_enqueue_style( 'dashicons' );
 
 	wp_enqueue_script( 'kyle-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
