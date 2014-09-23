@@ -23,67 +23,61 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 					echo '<li><a href="'. $category->slug .'">'. $category->name .'</a></li>';
 				} ?>
 			</ul>
-		<?php } ?>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-wordpress-alt"></div> Make WordPress plugins
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-lightbulb"></div> Run my business
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-twitter"></div> Engage others on the Twitters
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-businessman"></div> Make connections on LinkedIn
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-googleplus"></div> Waste time on Google+
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-media-code"></div> Share code on Github
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-nametag"></div> Attend local meetups
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-facebook"></div> Occasionally login to Facebook
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-format-audio"></div> Make Grooveshark playlists
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-megaphone"></div> Speak at WordPress events
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-microphone"></div> Podcast weekly
-			</a>
-		</li>
-		<li>
-			<a href="#" class="button large">
-				<div class="dashicons dashicons-welcome-learn-more"></div> Show off my knowledge
-			</a>
-		</li>
+		<?php }
+		$links = array(
+			'Make WordPress plugins' => array(
+				'link' => 'https://profiles.wordpress.org/brashrebel/',
+				'icon' => 'wordpress-alt'
+			),
+			'Run my business' => array(
+				'link' => 'http://realbigmarketing.com/staff/kyle',
+				'icon' => 'lightbulb'
+			),
+			'Engage others on Twitter' => array(
+				'link' => 'https://twitter.com/MrKyleMaurer',
+				'icon' => 'twitter'
+			),
+			'Connect on LinkedIn' => array(
+				'link' => 'https://www.linkedin.com/in/maurerkyle',
+				'icon' => 'businessman'
+			),
+			'Waste time on Google+' => array(
+				'link' => 'https://plus.google.com/u/1/+KyleMaurerRBM/posts',
+				'icon' => 'googleplus'
+			),
+			'Share code on Github' => array(
+				'link' => '#',
+				'icon' => 'media-code'
+			),
+			'Attend local meetups' => array(
+				'link' => '#',
+				'icon' => 'nametag'
+			),
+			'Occasionally login to Facebook' => array(
+				'link' => '#',
+				'icon' => 'facebook'
+			),
+			'Make Grooveshark playlists' => array(
+				'link' => '#',
+				'icon' => 'format-audio'
+			),
+			'Speak at WordPress events' => array(
+				'link' => '#',
+				'icon' => 'megaphone'
+			),
+			'Podcast weekly' => array(
+				'link' => '#',
+				'icon' => 'microphone'
+			),
+			'Show off my knowledge' => array(
+				'link' => '#',
+				'icon' => 'welcome-learn-more'
+			),
+		);
+		foreach ( $links as $name => $link ) {
+			echo '<li><a href="'. $link['link'] .'" class="button large"><div class="dashicons dashicons-'. $link['icon'] .'"></div> '. $name .'</a></li>';
+		}
+		?>
 	</ul>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
