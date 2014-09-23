@@ -13,4 +13,17 @@ h2, h3 {
   .button-group>li>button, .button-group>li .button {
     border: none;
   }
+  .button {
+    font-family: $exo;
+  }
+}
+#page {
+  a.button {
+    color: $gray;
+    background-color: $gb;
+    &:hover {
+      color: $white;
+      background-color: $dgb;
+    }
+  }
 }

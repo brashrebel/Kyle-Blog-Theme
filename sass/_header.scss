@@ -8,6 +8,11 @@ header {
         font-family: $exo;
         margin-bottom: 0;
       }
+    h1 {
+      a {
+      color: $gb;
+      }
+    }
   }
   .main-navigation {
     clear: none;

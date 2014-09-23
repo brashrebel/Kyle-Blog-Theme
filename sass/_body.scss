@@ -2,6 +2,15 @@
   &.row {
     max-width: none;
   }
+  a {
+    color: $gb;
+    &:visited {
+      color: $gb;
+    }
+    &:hover {
+      color: $dgb;
+    }
+  }
 }
 #secondary {
   background-color: $gray;
