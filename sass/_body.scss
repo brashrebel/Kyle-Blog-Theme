@@ -1,3 +1,8 @@
-#primary {
-  float: right;
+#page {
+  &.row {
+    max-width: none;
+  }
+}
+#secondary {
+  background-color: $gray;
 }

@@ -14,6 +14,25 @@ function kyle_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	// Logo
+	$wp_customize->add_setting( 'logo' , array(
+		'default' => ''
+	) );
+	$wp_customize->add_section( 'logo' , array(
+		'title'      => __( 'Logo', 'kyle' ),
+		'priority'   => 30,
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'logo',
+			array(
+				'label'      => __( 'Upload a logo', 'theme_name' ),
+				'section'    => 'logo',
+				'settings'   => 'logo'
+			)
+		)
+	);
 }
 add_action( 'customize_register', 'kyle_customize_register' );
 

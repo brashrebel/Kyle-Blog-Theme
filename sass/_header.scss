@@ -1,4 +1,14 @@
 header {
+  &#masthead {
+    padding: 0;
+  }
+  .site-branding {
+    background-color: $gray;
+      h1, h2 {
+        font-family: $exo;
+        margin-bottom: 0;
+      }
+  }
   .main-navigation {
     clear: none;
   }
