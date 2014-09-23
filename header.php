@@ -26,7 +26,9 @@
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
-			<img src="<?php echo get_theme_mod('logo'); ?>"/>
+			<div class="logo">
+				<img src="<?php echo get_theme_mod('logo'); ?>"/>
+			</div>
 		</div>
 
 		<!--<nav id="site-navigation" class="main-navigation large-9 columns" role="navigation">

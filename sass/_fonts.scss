@@ -12,4 +12,9 @@ p {
 }
 #secondary {
   font-family: $exo;
+  .dashicons {
+    font-size: 1.4em;
+    width: auto;
+    height: auto;
+  }
 }
