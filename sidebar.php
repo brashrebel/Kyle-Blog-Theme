@@ -46,31 +46,31 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				'icon' => 'googleplus'
 			),
 			'Share code on Github' => array(
-				'link' => '#',
+				'link' => 'https://github.com/brashrebel',
 				'icon' => 'media-code'
 			),
 			'Attend local meetups' => array(
-				'link' => '#',
+				'link' => 'http://www.meetup.com/members/30073012/',
 				'icon' => 'nametag'
 			),
 			'Occasionally login to Facebook' => array(
-				'link' => '#',
+				'link' => 'https://www.facebook.com/maurerkylej',
 				'icon' => 'facebook'
 			),
 			'Make Grooveshark playlists' => array(
-				'link' => '#',
+				'link' => 'http://grooveshark.com/#!/mr.kjm1',
 				'icon' => 'format-audio'
 			),
 			'Speak at WordPress events' => array(
-				'link' => '#',
+				'link' => 'http://wordpress.tv/speakers/kyle-maurer/',
 				'icon' => 'megaphone'
 			),
 			'Podcast weekly' => array(
-				'link' => '#',
+				'link' => 'http://wproundtable.com/',
 				'icon' => 'microphone'
 			),
 			'Show off my knowledge' => array(
-				'link' => '#',
+				'link' => 'http://smarterer.com/brashrebel',
 				'icon' => 'welcome-learn-more'
 			),
 		);
