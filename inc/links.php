@@ -15,8 +15,7 @@
 			<dl class="accordion" data-accordion>
 				<dd class="accordion-navigation">
 					<a href="#topics" class="button split expand"><div class="dashicons dashicons-rss"></div>Blog about these topics
-						<div class="dashicons dashicons-arrow-right-alt show-for-medium-up"></div>
-						<span data-dropdown="drop" class="show-for-medium-up"></span>
+						<span data-dropdown="drop" class="show-for-large-up"></span>
 					</a>
 					<div id="topics" class="content">
 						<ul>
