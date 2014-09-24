@@ -121,7 +121,9 @@ function kyle_scripts() {
 
 	/* Add Foundation JS */
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/js/foundation/foundation.js', array( 'jquery' ), '1', true );
-	wp_enqueue_script( 'foundation-dropdown-js', get_template_directory_uri() . '/js/foundation/foundation.dropdown.js', array( 'jquery' ), '1', true );
+	//wp_enqueue_script( 'foundation-dropdown-js', get_template_directory_uri() . '/js/foundation/foundation.dropdown.js', array( 'jquery' ), '1', true );
+	wp_enqueue_script( 'foundation-offcanvas-js', get_template_directory_uri() . '/js/foundation/foundation.offcanvas.js', array( 'jquery' ), '1', true );
+	wp_enqueue_script( 'foundation-accordion-js', get_template_directory_uri() . '/js/foundation/foundation.accordion.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'kyle-custom', get_template_directory_uri() . '/js/custom.js', array(), '1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

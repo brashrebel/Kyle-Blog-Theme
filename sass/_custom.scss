@@ -1,9 +1,11 @@
-.button-group.stack > li {
-  display: block;
-  float: none;
-  a {
-    width: 100%;
-    margin: 0 0 1px;
+.button-group.stack > {
+  li, dl {
+    display: block;
+    float: none;
+    a.button {
+      width: 100%;
+      margin: 0 0 1px;
+    }
   }
 }
 h2, h3 {
@@ -30,5 +32,10 @@ h2, h3 {
 #masthead, #secondary {
   h1, h2, h3 {
     padding: 0.3em;
+  }
+}
+.move-right {
+  .left-off-canvas-menu {
+    position: relative;
   }
 }

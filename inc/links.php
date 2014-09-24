@@ -7,18 +7,24 @@
  */
 ?>
 <h2>Hello, my name is Kyle and I like to...</h2>
-	<ul class="stack button-group">
+	<ul class="stack button-group off-canvas-list">
 		<?php // get the categories
 		$categories = get_categories();
 		if ( $categories ) {
 			?>
-			<li><a href="#" class="button split expand"><div class="dashicons dashicons-rss"></div>Blog about these topics
-					<div class="dashicons dashicons-arrow-right-alt"></div><span data-dropdown="drop"></span></a></li>
-			<ul id="drop" class="f-dropdown" data-dropdown-content>
-				<?php foreach ( $categories as $category ) {
-					echo '<li><a href="'. $category->slug .'">'. $category->name .'</a></li>';
-				} ?>
-			</ul>
+			<dl class="accordion" data-accordion>
+				<dd class="accordion-navigation">
+					<a href="#topics" class="button split expand"><div class="dashicons dashicons-rss"></div>Blog about these topics
+						<div class="dashicons dashicons-arrow-right-alt"></div><span data-dropdown="drop"></span></a>
+					<div id="topics" class="content">
+						<ul>
+							<?php foreach ( $categories as $category ) {
+								echo '<li><a href="'. $category->slug .'">'. $category->name .'</a></li>';
+							} ?>
+						</ul>
+					</div>
+				</dd>
+			</dl>
 		<?php }
 		$links = array(
 			'Make WordPress plugins' => array(
@@ -49,7 +55,7 @@
 				'link' => 'http://www.meetup.com/members/30073012/',
 				'icon' => 'nametag'
 			),
-			'Occasionally login to Facebook' => array(
+			'Occasionally use Facebook' => array(
 				'link' => 'https://www.facebook.com/maurerkylej',
 				'icon' => 'facebook'
 			),
