@@ -16,7 +16,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'kyle' ) ); ?>
+		<?php the_post_thumbnail('thumbnail'); ?>
+		<?php the_excerpt();
+		//the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'kyle' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'kyle' ),

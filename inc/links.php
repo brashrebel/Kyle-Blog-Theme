@@ -20,7 +20,7 @@
 					<div id="topics" class="content">
 						<ul>
 							<?php foreach ( $categories as $category ) {
-								echo '<li><a href="'. $category->slug .'">'. $category->name .'</a></li>';
+								echo '<li><a href="'. get_category_link( $category->term_id ) .'">'. $category->name .'</a></li>';
 							} ?>
 						</ul>
 					</div>
