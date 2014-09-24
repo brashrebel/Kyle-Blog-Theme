@@ -15,7 +15,9 @@
 			<dl class="accordion" data-accordion>
 				<dd class="accordion-navigation">
 					<a href="#topics" class="button split expand"><div class="dashicons dashicons-rss"></div>Blog about these topics
-						<div class="dashicons dashicons-arrow-right-alt"></div><span data-dropdown="drop"></span></a>
+						<div class="dashicons dashicons-arrow-right-alt show-for-medium-up"></div>
+						<span data-dropdown="drop" class="show-for-medium-up"></span>
+					</a>
 					<div id="topics" class="content">
 						<ul>
 							<?php foreach ( $categories as $category ) {

@@ -34,8 +34,24 @@ h2, h3 {
     padding: 0.3em;
   }
 }
-.move-right {
-  .left-off-canvas-menu {
-    position: relative;
+#secondary {
+  .off-canvas-wrap {
+    a.left-off-canvas-toggle {
+      background-color: $gb;
+      color: $white;
+      padding: 15px;
+      display: inline-block;
+      border-right: 1px solid $white;
+      width: 100%;
+      .dashicons {
+        font-size: 1em;
+      }
+    }
+  }
+  .move-right {
+    .left-off-canvas-menu {
+      position: relative;
+      margin: -46px 0 0 0;
+    }
   }
 }
