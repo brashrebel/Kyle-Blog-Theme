@@ -25,9 +25,12 @@
 	<header id="masthead" class="site-header columns large-4" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
+			<h3 class="site-description hide-for-small-down"><?php bloginfo( 'description' ); ?></h3>
 			<div class="logo">
-				<img src="<?php echo get_theme_mod('logo'); ?>"/>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_theme_mod('logo'); ?>" class="show-for-large-up"/>
+					<img src="<?php echo get_theme_mod('logo-small'); ?>" class="hide-for-large-up"/>
+				</a>
 			</div>
 		</div>
 

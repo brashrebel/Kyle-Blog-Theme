@@ -33,6 +33,25 @@ function kyle_customize_register( $wp_customize ) {
 			)
 		)
 	);
+	// Small logo
+	$wp_customize->add_setting( 'logo-small' , array(
+		'default' => ''
+	) );
+	$wp_customize->add_section( 'logo-small' , array(
+		'title'      => __( 'Small Logo', 'kyle' ),
+		'priority'   => 30,
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'logo-small',
+			array(
+				'label'      => __( 'Upload a smaller logo (optional)', 'theme_name' ),
+				'section'    => 'logo-small',
+				'settings'   => 'logo-small'
+			)
+		)
+	);
 }
 add_action( 'customize_register', 'kyle_customize_register' );
 
