@@ -56,6 +56,10 @@
 				'link' => 'http://www.meetup.com/members/30073012/',
 				'icon' => 'nametag'
 			),
+			'Give advice on Clarity' => array(
+				'link' => 'https://clarity.fm/kylemaurer',
+				'icon' => 'lightbulb'
+			),
 			'Occasionally use Facebook' => array(
 				'link' => 'https://www.facebook.com/maurerkylej',
 				'icon' => 'facebook'
