@@ -82,7 +82,7 @@ if ( ! function_exists( 'kyle_setup' ) ) : /**
 		) ) );
 
 		// Register fonts
-		wp_register_style( 'kfonts', '//fonts.googleapis.com/css?family=Poiret+One|Exo:200,400', array(), '1.0' );
+		wp_register_style( 'kfonts', '//fonts.googleapis.com/css?family=Open+Sans|Exo:200,400', array(), '1.0' );
 	}
 }
 endif; // kyle_setup

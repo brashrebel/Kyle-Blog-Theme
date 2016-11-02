@@ -32,9 +32,13 @@
 				'link' => 'https://profiles.wordpress.org/brashrebel/',
 				'icon' => 'wordpress-alt'
 			),
-			'Run my business' => array(
+			'Run a digital agency' => array(
 				'link' => 'http://realbigmarketing.com/staff/kyle',
 				'icon' => 'lightbulb'
+			),
+			'Manage a software business' => array(
+				'link' => 'https://realbigplugins.com',
+				'icon' => 'editor-code'
 			),
 			'Engage others on Twitter' => array(
 				'link' => 'https://twitter.com/MrKyleMaurer',
@@ -64,10 +68,6 @@
 				'link' => 'https://www.facebook.com/maurerkylej',
 				'icon' => 'facebook'
 			),
-			'Make Grooveshark playlists' => array(
-				'link' => 'http://grooveshark.com/#!/mr.kjm1',
-				'icon' => 'format-audio'
-			),
 			'Speak at WordPress events' => array(
 				'link' => 'http://wordpress.tv/speakers/kyle-maurer/',
 				'icon' => 'megaphone'
@@ -75,10 +75,6 @@
 			'Podcast weekly' => array(
 				'link' => 'http://wproundtable.com/',
 				'icon' => 'microphone'
-			),
-			'Show off my knowledge' => array(
-				'link' => 'http://smarterer.com/brashrebel',
-				'icon' => 'welcome-learn-more'
 			),
 		);
 		foreach ( $links as $name => $link ) {
