@@ -28,13 +28,17 @@
 			</dl>
 		<?php }
 		$links = array(
+			'Work for an amazing company' => array(
+				'link' => 'http://sandhillsdev.com/',
+				'icon' => 'cart'
+			),
 			'Make WordPress plugins' => array(
-				'link' => 'https://profiles.wordpress.org/brashrebel/',
+				'link' => 'https://profiles.wordpress.org/brashrebel/#content-plugins',
 				'icon' => 'wordpress-alt'
 			),
-			'Run a digital agency' => array(
-				'link' => 'http://realbigmarketing.com/staff/kyle',
-				'icon' => 'lightbulb'
+			'Co-host an advice show' => array(
+				'link' => 'http://getoptionspodcast.com',
+				'icon' => 'microphone'
 			),
 			'Manage a software business' => array(
 				'link' => 'https://realbigplugins.com',
@@ -47,10 +51,6 @@
 			'Connect on LinkedIn' => array(
 				'link' => 'https://www.linkedin.com/in/maurerkyle',
 				'icon' => 'businessman'
-			),
-			'Waste time on Google+' => array(
-				'link' => 'https://plus.google.com/u/1/+KyleMaurerRBM/posts',
-				'icon' => 'googleplus'
 			),
 			'Share code on Github' => array(
 				'link' => 'https://github.com/brashrebel',
