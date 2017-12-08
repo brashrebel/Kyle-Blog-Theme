@@ -11,6 +11,7 @@
       color: $dgb;
     }
   }
+  color: $maingray;
 }
 #primary {
   padding-right: 1em;
@@ -24,4 +25,10 @@
 .attachment-thumbnail {
   float: left;
   padding-right: 1em;
+}
+.gallery-icon {
+  display: inline-block;
+}
+.wp-caption-text {
+  font-size: 0.6em;
 }
